@@ -28,6 +28,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx",
+    "app/layout.tss",
     ".next/types/**/*.ts"
   ],
   "exclude": [
