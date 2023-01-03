@@ -2,6 +2,13 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 
 ## Getting Started
 
+Antes que nada actualiza los modulos de node
+
+```bash
+npm i
+ //se recomienda una version de node 16.8.0 para adelante
+```
+
 First, run the development server:
 
 ```bash
