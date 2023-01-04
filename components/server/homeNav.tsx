@@ -41,7 +41,9 @@ export default function NavBar() {
                     </Link>
                 </li>
                 <li>
-                    <a>Hola Prros</a>
+                    <Link href={'/login'}>
+                        <a>Login</a>
+                    </Link>
                 </li>
             </ul>
         </div>
