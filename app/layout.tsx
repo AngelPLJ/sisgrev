@@ -1,4 +1,5 @@
 import '../styles/globals.css'
+import Navbar from '../components/server/homeNav'
 
 export default function RootLayout({
     // Layouts must accept a children prop.
@@ -10,7 +11,10 @@ export default function RootLayout({
     return (
       <html lang="es">
         <body>
-          {children}
+          <Navbar/>
+          <main className='container'>
+            {children}
+          </main>
         </body>
       </html>
     );
