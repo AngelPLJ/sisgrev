@@ -28,7 +28,7 @@ export default function NavBar() {
         <div className={styles.menuBar}>
             <ul className={styles.headerUl}>
                 <li>
-                    <Link href="/acerca-de" legacyBehavior>
+                    <Link href="/acerca_de" legacyBehavior>
                         <a>Acerca de</a>
                     </Link>
                 </li>
@@ -41,7 +41,7 @@ export default function NavBar() {
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/login'}>
+                    <Link href={'/login'} legacyBehavior>
                         <a>Login</a>
                     </Link>
                 </li>

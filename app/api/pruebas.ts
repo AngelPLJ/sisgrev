@@ -14,6 +14,8 @@ export default async function handler(
   switch(method) {
     case "GET":
       const response = await conn.query("SELECT * FROM personas")
+      console.log(response);
+      
       res.status(200).json({ name: 'John Doe' })
       break
     case "POST":
