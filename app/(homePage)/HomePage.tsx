@@ -2,8 +2,6 @@
 
 import Image from 'next/image'
 import { Inter } from '@next/font/google'
-import styles from '../styles/Home.module.css'
-import utilStyles from '../styles/utils.module.css'
 import Link from 'next/link'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,9 +12,9 @@ const inter = Inter({ subsets: ['latin'] })
 export default function HomePage() {
     return (
     <>
-        <main className={styles.main}>
-            <div className={styles.seccion}>
-                <div className={styles.texto}>
+        <main>
+            <div>
+                <div>
                     <p> 
                         La caja de herramientas complementa el procedimiento para la determinación, 
                         coordinación y seguimiento de medidas de protección especial por parte de 
@@ -29,7 +27,6 @@ export default function HomePage() {
                 </div>
                 <div>
                     <Image 
-                        className={utilStyles.imagen}
                         src={'/images/Niños.JPG'}
                         alt="Niños"
                         width={465}
@@ -37,17 +34,16 @@ export default function HomePage() {
                     />
                 </div>
             </div>
-            <div className={styles.seccion}>
+            <div>
                 <div>
                     <Image 
-                        className={utilStyles.imagen}
                         src={'/images/ListaDerechos.webp'}
                         alt="Imagen Derechos"
                         width={500}
                         height={300}
                     />
                 </div>
-                <div className={styles.texto2}>
+                <div>
                     <p>
                         Los Derechos Humanos de niñas, niños y adolescentes están previstos en 
                         la Constitución Política de los Estados Unidos Mexicanos, en los tratados 
@@ -59,7 +55,7 @@ export default function HomePage() {
                     </p>
                 </div>
             </div>
-            <div className={styles.seccion}>
+            <div>
                 <ul>
                     <li>Derecho a la vida, a la supervivencia y al desarrollo;</li>
                     <li>Derecho de prioridad;</li>

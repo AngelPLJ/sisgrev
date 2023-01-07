@@ -1,5 +1,5 @@
 import '../styles/globals.css'
-import Navbar from '../components/server/homeNav'
+import Navbar from '../components/homeNav'
 
 export default function RootLayout({
     // Layouts must accept a children prop.
@@ -12,7 +12,7 @@ export default function RootLayout({
       <html lang="es">
         <body>
           <Navbar/>
-          <main className='container'>
+          <main>
             {children}
           </main>
         </body>
