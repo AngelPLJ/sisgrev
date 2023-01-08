@@ -48,14 +48,14 @@ const HomeNav = () => {
                     </ul>
                 </div>
                 {user?.isLoggedIn === false && (
-                    <div>
+                    <div className="hidden md:flex">
                         <Link href={'/login'} className="py-1 px-5 bg-cafeClaro text-naranjaOpaco text-center rounded-full">
                             Login
                         </Link>
                     </div>
                 )}
                 {user?.isLoggedIn === true && (
-                    <div>
+                    <div className="hidden md:flex">
                         <Link 
                             href={'/api/logout'} 
                             className="py-1 px-5 bg-cafeClaro text-naranjaOpaco text-center rounded-full"
