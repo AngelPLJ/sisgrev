@@ -1,5 +1,9 @@
+'use client'
+
 import '../styles/globals.css'
-import Navbar from '../components/homeNav'
+import Navbar from '../components/HomeNav'
+import { SWRConfig } from 'swr';
+import fetchJson from '../handlers/fetchUser';
 
 export default function RootLayout({
     // Layouts must accept a children prop.
@@ -10,12 +14,19 @@ export default function RootLayout({
   }) {
     return (
       <html lang="es">
-        <body>
-          <Navbar/>
-          <main>
-            {children}
-          </main>
-        </body>
+        <SWRConfig value={{
+          fetcher: fetchJson,
+          onError: (err) => {
+            console.error(err)
+          },
+        }}>
+          <body className='bg-gradient-to-r from-naranjaOpaco to-naranjaClaro'>
+            <Navbar/>
+            <main className='mt-10 mx-10'>
+              {children}
+            </main>
+          </body>
+        </SWRConfig>
       </html>
     );
   }
