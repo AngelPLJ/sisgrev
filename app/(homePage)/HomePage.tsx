@@ -8,7 +8,7 @@ import Image from 'next/image'
 export default function HomePage() {
     return (
     <>
-        <div className='my-4 flex flex-col px-4 items-center bg-articulo md:flex-row'>
+        <div className='my-4 flex flex-col px-4 items-center bg-articulo md:flex-row '>
             <div>
                 <p> 
                     La caja de herramientas complementa el procedimiento para la determinación, 

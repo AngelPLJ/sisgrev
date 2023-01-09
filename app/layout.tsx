@@ -1,5 +1,4 @@
 'use client'
-
 import '../styles/globals.css'
 import Navbar from '../components/HomeNav'
 import { SWRConfig } from 'swr';

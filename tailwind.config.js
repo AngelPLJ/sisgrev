@@ -21,7 +21,7 @@ module.exports = {
         grisRojizo: '#f0e4e9',
         cafeTransparente1: '#e6cfc195',
         cafeTransparente2: '#e6cfc135',
-        rosaPastel: '#f08ddf',
+        rosaPastel: '#f08d9f',
         rojoOscuro: '#7f1d1d',
       },
     },
