@@ -9,7 +9,21 @@ npm i
  //se recomienda una version de node 16.8.0 para adelante
 ```
 
-First, run the development server:
+despues se migra la configuracion de prisma a la base de datos
+
+```bash
+    npx prisma migrate dev
+```
+
+En este caso estamos usando Postgresql asi que tambien debemos crear una variable de desarrollo para que Prisma pueda usar esa base de datos
+
+Creamos un archivo y lo llamamos .env y dentro ponemos la siguiente variable
+
+```bash
+    DATABASE_URL="postgresql://<Usuario>:<Contraseña>@localhost:<Puerto>/<DB>?schema=public"
+```
+
+Cambiamos <Usuario> <Contraseña> <Puerto> y <DB> por sus respectivos valores
 
 ```bash
 npm run dev

@@ -45,6 +45,20 @@ const HomeNav = () => {
                                 Caja de herramientas
                             </Link>
                         </li>
+                        {user?.isLoggedIn === true && (
+                            <li className="px-3 transition-colors hover:bg-naranjaOpaco hover:text-black active:bg-grisRojizo">
+                                <Link href={'/registro'}>
+                                    Registrar
+                                </Link>
+                            </li>
+                        )}
+                        {user?.isLoggedIn === true && user?.puesto !== "DENUNCIANTE" && (
+                            <li className="px-3 transition-colors hover:bg-naranjaOpaco hover:text-black active:bg-grisRojizo">
+                                <Link href={'/expedientes'}>
+                                    Expedientes
+                                </Link>
+                            </li>
+                        )}
                     </ul>
                 </div>
                 {user?.isLoggedIn === false && (

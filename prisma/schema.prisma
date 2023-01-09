@@ -20,7 +20,7 @@ model Personas {
   id String @id @default(cuid())
   nombre String
   apellido String
-  puesto Puesto
+  puesto Puesto @default(DENUNCIANTE)
   email String
   password String
 }
