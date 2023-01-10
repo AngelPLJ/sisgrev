@@ -17,10 +17,10 @@ enum Puesto {
 }
 
 model Personas {
-  id String @id @default(cuid())
-  nombre String
+  id       String @id @default(cuid())
+  nombre   String
   apellido String
-  puesto Puesto @default(DENUNCIANTE)
-  email String
+  puesto   Puesto @default(DENUNCIANTE)
+  email    String
   password String
 }

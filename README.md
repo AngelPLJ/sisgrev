@@ -6,7 +6,7 @@ Antes que nada actualiza los modulos de node
 
 ```bash
 npm i
- //se recomienda una version de node 16.8.0 para adelante
+ //se recomienda una version de node 16.8.0 para adelante postdata no funciona en node 18
 ```
 
 despues se migra la configuracion de prisma a la base de datos

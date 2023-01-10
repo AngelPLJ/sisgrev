@@ -10,7 +10,8 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
   const { email, password } = await req.body
 
   try {
-    const datos = await prisma.personas.findFirst({
+
+    const datos = await prisma.personas.findFirstOrThrow({
         where: {
             email: email,
             password: password,
@@ -20,6 +21,7 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
             puesto: true,
         }
     })
+    
     if(datos == null)
         res.status(505).json({message: 'No existe el usuario'})
     else {
@@ -27,6 +29,7 @@ async function loginRoute(req: NextApiRequest, res: NextApiResponse) {
         req.session.user = user
         await req.session.save()
         res.json(user)
+        
     }
   } catch (error) {
     res.status(500).json({ message: (error as Error).message })
